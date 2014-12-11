@@ -1,0 +1,9 @@
+-Iinclude/
+-I./include/
+-I../include/
+-I/usr/include/SFML/
+-I/usr/include/SFML/Audio/
+-I/usr/include/SFML/Graphics/
+-I/usr/include/SFML/Network/
+-I/usr/include/SFML/System/
+-I/usr/include/SFML/Window/
