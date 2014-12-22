@@ -7,3 +7,9 @@
 -I/usr/include/SFML/Network/
 -I/usr/include/SFML/System/
 -I/usr/include/SFML/Window/
+-I/usr/local/include/SFML/
+-I/usr/local/include/SFML/Audio/
+-I/usr/local/include/SFML/Graphics/
+-I/usr/local/include/SFML/Network/
+-I/usr/local/include/SFML/System/
+-I/usr/local/include/SFML/Window/
