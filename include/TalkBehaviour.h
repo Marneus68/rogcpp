@@ -7,6 +7,8 @@
 #include "Entity.h"
 
 namespace rogcpp {
+    class Entity;
+
     typedef std::map<std::string, std::string> StringMap;
 
     class TalkBehaviour {
@@ -16,10 +18,10 @@ namespace rogcpp {
 
         public:
             TalkBehaviour ();
-            TalkBehaviour (const Entity & _entity);
-            TalkBehaviour (const std::string & fileName,        const Entity & _entity);
-            TalkBehaviour (const StringMap & stringMap,         const Entity & _entity);
-            TalkBehaviour (const TalkBehaviour & talkBehaviour, const Entity & _entity);
+            TalkBehaviour (Entity & _entity);
+            TalkBehaviour (const std::string & fileName,        Entity & _entity);
+            TalkBehaviour (const StringMap & stringMap,         Entity & _entity);
+            TalkBehaviour (const TalkBehaviour & talkBehaviour,Entity & _entity);
             virtual ~TalkBehaviour ();
     
             TalkBehaviour & operator=(const TalkBehaviour & talkBehaviour);

@@ -4,6 +4,7 @@
 #include <iostream>
 
 #include "Entity.h"
+#include "DefaultTalkBehaviour.h"
 
 int main(int argc, const char *argv[])
 {
@@ -16,7 +17,7 @@ int main(int argc, const char *argv[])
         };
 
     rogcpp::Entity e("Hello");
-    e.talkBehaviour = new rogcpp::DefaultTalkBehaviour(e, tmpmap);
+    e.talkBehaviour = new rogcpp::DefaultTalkBehaviour(tmpmap, e);
     std::string str;
 
     e.talk("HELLO", str);

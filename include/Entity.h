@@ -4,9 +4,10 @@
 #include <string>
 
 #include "TalkBehaviour.h"
-#include "DefaultTalkBehaviour.h"
 
 namespace rogcpp {
+    class TalkBehaviour;
+
     class Entity {
         protected:
             std::string     firstname,
